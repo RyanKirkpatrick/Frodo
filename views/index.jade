@@ -1,14 +1,6 @@
-doctype html
-html(lang="en")
-    head
-        title="Frodo"
+extends layout
 
-    body
-        div.container
-            div.row
-                h1 Frodo
-
-            div.row
-                form(action="/", method="POST")
-                    input(type="url", name="url")
-                    input(type="submit", value="Submit")
+div.row
+    form(action="/", method="POST")
+        input(type="url", name="url")
+        input(type="submit", value="Submit")

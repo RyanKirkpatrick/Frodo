@@ -1,12 +1,6 @@
-doctype html
-html(lang="en")
-    head
-        title=Frodo
+extends layout
 
-    body
-        div.container
-            div.row
-                h1 Frodo
-                p 
-                    | Your shortened URL is 
-                    a(href=base_url+'/'+id) #{base_url}/#{id}
+
+p 
+    | Your shortened URL is 
+    a(href=base_url+'/'+id) #{base_url}/#{id}
